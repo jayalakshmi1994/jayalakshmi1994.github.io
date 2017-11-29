@@ -1,37 +1,55 @@
 ## Website Performance Optimization portfolio project
+Project Overview:
+  
+	* The task was to ompitimize the given website with number of optimization and perormance related issues.
+	* The page speed for the site has to be increased.
+Project Demo
+------------	
+View the Initial Project : (https://github.com/udacity/frontend-nanodegree-mobile-portfolio)
 
-View the Project in Working at: [Website Optimization](http://sagarchoudhary96.github.io/Web_Optimization/).
+View the Optimized Project : [Website Optimization](https://jayalakshmi1994.github.io/)
 
-The Key Goal of this Project was to Optimize a Given Website As Much As Possible for Faster Rendering & to Achieve High PageSpeed Score.
 
 #### PageSpeed Insights
+Initial pagee spped for the website
+
+* Desktop 97/100
+* Mobile 95/100
+
+Page speed after optimization
+
 * Desktop 97/100
 * Mobile 95/100
 
 
-#### Tools used:
+A)Tools used for optimization:
 
-* Grunt JS
-* CSS Minifier
-* JS Compress
-* Kraken.io
-* Unminify
-
-
-#### Step 1: Optimize `index.html`
-
-* Optimized Images
-* Minified JavaScript
-* Minified CSS
-* Inline CSS styling
+* Grunt JS: The Javascript task runner.
+* CSS Minifier: Used to minify css.
+* JS Compress: To compress the javascript files.
+* Kraken.io: To compress the images.
 
 
-#### Step 2: Optimize `pizza.html`
 
-* Optimized Images
-* Recorded timeline.
-* Saw a red triangle on Layout indicated Forced Synched Layout in Main.js
-* Made changes in UpdatePosition() and changePizza Sizes().
-* Minified all the HTML ,CSS and JavaScript files.
+B) Part 1: Optimize `index.html`
 
-* New Change
+** Optimize images
+------------------
+	* Optimized Images in the index.html to acheive high page speed.
+  
+** Optimize Render blocking request
+-----------------------------------
+	* The css files are inlined and  added a media type for ‘print.css’ and added an async tag to the perfmatters.js file.
+	 
+	<link href="css/print.css" rel="stylesheet" media="print">
+    
+    <script async src="js/perfmatters.js"></script>
+
+
+C) Part 2: Optimize `pizza.html`
+
+* Optimized Images in the pizza.html file.
+* Recorded timeline traces to find the frame rate.
+* In UpdatePosition() function and in the  changePizzaSizes() function the 'querySelectorAll' is changed to 'getElementsByClassName' and querySelector() is changed to to getElementById().
+
+
