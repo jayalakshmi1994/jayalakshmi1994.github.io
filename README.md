@@ -14,8 +14,8 @@ View the Optimized Project : [Website Optimization](https://jayalakshmi1994.gith
 
 Page speed after optimization
 
-* Desktop 96/100
-* Mobile 96/100
+* Desktop 97/100
+* Mobile 95/100
 
 
 A)Tools used for optimization:

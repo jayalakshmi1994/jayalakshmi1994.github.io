@@ -220,9 +220,9 @@ var resizePizzas = function(size) {
     console.log("Time to resize pizzas: " + timeToResize[timeToResize.length - 1].duration + "ms");
 };
 window.performance.mark("mark_start_generating");
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-    var pizzasDiv = document.getElementById("randomPizzas");
-    pizzasDiv.appendChild(pizzaElementGenerator(i));
+	pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 window.performance.mark("mark_end_generating");
 window.performance.measure("measure_pizza_generation", "mark_start_generating", "mark_end_generating");
@@ -245,7 +245,7 @@ function updatePositions() {
     var items = document.getElementsByClassName('mover');
     var phase = [];
     for (var i = 0; i < items.length; i++) {
-        phase.push(Math.sin((document.body.scrollTop / 1250) + (i % 5)));
+        phase.push(Math.sin((document.documentElement.scrollTop / 1250) + (i % 5)));
     }
     for (var i = 0; i < items.length; i++) {
         items[i].style.left = items[i].basicLeft + 100 * phase[i] + 'px';
