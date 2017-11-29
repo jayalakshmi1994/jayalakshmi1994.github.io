@@ -11,15 +11,11 @@ View the Optimized Project : [Website Optimization](https://jayalakshmi1994.gith
 
 
 #### PageSpeed Insights
-Initial pagee spped for the website
-
-* Desktop 97/100
-* Mobile 95/100
 
 Page speed after optimization
 
-* Desktop 97/100
-* Mobile 95/100
+* Desktop 96/100
+* Mobile 96/100
 
 
 A)Tools used for optimization:
@@ -52,4 +48,7 @@ C) Part 2: Optimize `pizza.html`
 * Recorded timeline traces to find the frame rate.
 * In UpdatePosition() function and in the  changePizzaSizes() function the 'querySelectorAll' is changed to 'getElementsByClassName' and querySelector() is changed to to getElementById().
 
+D) Part 3: Measure
 
+* Page speed can be measured at :https://developers.google.com/speed/pagespeed/insights/
+* Developer tool is used for further measurements. 
